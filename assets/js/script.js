@@ -62,6 +62,8 @@ const headerActive = function () {
 
 addEventOnElem(window, "scroll", headerActive);
 
+// Header hide logic removed to keep navigation always visible while scrolling
+/*
 let lastScrolledPos = 0;
 
 const headerSticky = function () {
@@ -75,6 +77,7 @@ const headerSticky = function () {
 }
 
 addEventOnElem(window, "scroll", headerSticky);
+*/
 
 
 

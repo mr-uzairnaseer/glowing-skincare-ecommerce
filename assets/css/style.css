@@ -709,6 +709,9 @@ body {
   margin-block: 10px 25px;
 }
 
+.banner-card-2 :is(.card-title, .card-text) { color: var(--white); }
+
+
 
 
 
@@ -1245,28 +1248,25 @@ body {
 
   .header-top {
     position: relative;
-    padding-block: 30px;
+    padding-block: 20px;
     background-color: var(--white);
-    transition: padding 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .header-top .logo img {
-    width: 120px;
-    height: auto;
-    transition: width 0.3s ease;
   }
 
   .header-top.active {
     position: fixed;
-    top: -140px;
+    top: 0;
     left: 0;
     width: 100%;
     background-color: var(--white);
     padding-block: 15px;
     box-shadow: var(--shadow-1);
     z-index: 10;
-    transform: translateY(100%);
-    transition: var(--transition-2);
+    transform: translateY(-100%);
+    animation: slideDown 0.4s ease forwards;
+  }
+
+  @keyframes slideDown {
+    to { transform: translateY(0); }
   }
 
   .header-top.active .logo img {
@@ -1275,8 +1275,7 @@ body {
   }
 
   .header-top.header-hide {
-    box-shadow: none;
-    transform: translateY(0);
+    display: none;
   }
 
   .header-top .container { 
