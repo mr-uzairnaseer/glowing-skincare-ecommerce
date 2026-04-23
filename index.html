@@ -167,18 +167,19 @@
         - #HERO
       -->
 
-      <section class="section hero" id="home" aria-label="hero" data-section>
+      <section class="section hero" id="home" aria-label="hero" data-section data-slider-parent>
         <div class="container" style="position: relative;">
 
-          <button class="slider-btn prev" aria-label="slide to previous" data-hero-slider-prev>
+          <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
             <ion-icon name="chevron-back"></ion-icon>
           </button>
 
-          <button class="slider-btn next" aria-label="slide to next" data-hero-slider-next>
+          <button class="slider-btn next" aria-label="slide to next" data-slider-next>
             <ion-icon name="chevron-forward"></ion-icon>
           </button>
 
-          <ul class="has-scrollbar" data-hero-slider>
+          <ul class="has-scrollbar" data-slider>
+
 
 
             <li class="scrollbar-item">
@@ -335,8 +336,17 @@
         - #SHOP
       -->
 
-      <section class="section shop" id="shop" aria-label="shop" data-section>
-        <div class="container">
+      <section class="section shop" id="shop" aria-label="shop" data-section data-slider-parent>
+        <div class="container" style="position: relative;">
+
+          <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+
 
           <div class="title-wrapper">
             <h2 class="h2 section-title">Our Bestsellers</h2>
@@ -348,7 +358,7 @@
             </a>
           </div>
 
-          <ul class="has-scrollbar">
+          <ul class="has-scrollbar" data-slider>
 
             <li class="scrollbar-item">
               <div class="shop-card">
@@ -361,14 +371,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -398,14 +406,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -435,14 +441,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -472,14 +476,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -511,14 +513,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -548,14 +548,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -581,8 +579,17 @@
         </div>
       </section>
 
-      <section class="section shop" id="shop" aria-label="shop" data-section>
-        <div class="container">
+      <section class="section shop" id="shop" aria-label="shop" data-section data-slider-parent>
+        <div class="container" style="position: relative;">
+
+          <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+
 
           <div class="title-wrapper">
             <h2 class="h2 section-title">Affordable Skincare</h2>
@@ -594,7 +601,7 @@
             </a>
           </div>
 
-          <ul class="has-scrollbar">
+          <ul class="has-scrollbar" data-slider>
 
             <li class="scrollbar-item">
               <div class="shop-card">
@@ -607,14 +614,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -644,14 +649,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -681,14 +684,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>
@@ -718,14 +719,12 @@
 
                   <div class="card-actions">
 
-                    <button class="action-btn" aria-label="add to cart">
-                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
                     </button>
 
-
-
-                    <button class="action-btn" aria-label="compare">
-                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
                     </button>
 
                   </div>

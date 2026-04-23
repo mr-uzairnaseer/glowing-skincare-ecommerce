@@ -534,7 +534,7 @@ body {
 
 .hero .scrollbar-item { min-width: 100%; }
 
-.hero .slider-btn {
+.slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -549,14 +549,32 @@ body {
   opacity: 0.8;
 }
 
-.hero .slider-btn:is(:hover, :focus) {
+.slider-btn:is(:hover, :focus) {
   background-color: var(--black);
   color: var(--white);
   opacity: 1;
 }
 
+.slider-btn.prev { left: 20px; }
+.slider-btn.next { right: 20px; }
+
+@media (min-width: 1200px) {
+  .slider-btn.prev { left: -20px; }
+  .slider-btn.next { right: -20px; }
+}
+
 .hero .slider-btn.prev { left: 30px; }
 .hero .slider-btn.next { right: 30px; }
+
+
+.shop-card {
+  transition: var(--transition-1);
+}
+
+.shop-card:is(:hover, :focus-within) {
+  box-shadow: var(--shadow-2);
+}
+
 
 
 

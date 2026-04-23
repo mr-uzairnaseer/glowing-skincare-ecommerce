@@ -102,42 +102,30 @@ addEventOnElem(window, "scroll", scrollReveal);
 
 
 /**
- * hero slider
+ * slider functionality
  */
 
-const heroSlider = document.querySelector("[data-hero-slider]");
-const heroSliderNextBtn = document.querySelector("[data-hero-slider-next]");
-const heroSliderPrevBtn = document.querySelector("[data-hero-slider-prev]");
+const initSlider = function (currentSlider) {
 
-let currentSlidePos = 0;
+  const sliderContainer = currentSlider.querySelector("[data-slider]");
+  const sliderPrevBtn = currentSlider.querySelector("[data-slider-prev]");
+  const sliderNextBtn = currentSlider.querySelector("[data-slider-next]");
 
-const slideNext = function () {
-  const slideItems = heroSlider.querySelectorAll(".scrollbar-item");
-  if (currentSlidePos >= slideItems.length - 1) {
-    currentSlidePos = 0;
-  } else {
-    currentSlidePos++;
+  if (!sliderContainer || !sliderPrevBtn || !sliderNextBtn) return;
+
+  const slideNext = function () {
+    sliderContainer.scrollBy({ left: sliderContainer.offsetWidth, behavior: "smooth" });
   }
 
-  heroSlider.scrollTo({
-    left: heroSlider.offsetWidth * currentSlidePos,
-    behavior: "smooth"
-  });
-}
-
-const slidePrev = function () {
-  const slideItems = heroSlider.querySelectorAll(".scrollbar-item");
-  if (currentSlidePos <= 0) {
-    currentSlidePos = slideItems.length - 1;
-  } else {
-    currentSlidePos--;
+  const slidePrev = function () {
+    sliderContainer.scrollBy({ left: -sliderContainer.offsetWidth, behavior: "smooth" });
   }
 
-  heroSlider.scrollTo({
-    left: heroSlider.offsetWidth * currentSlidePos,
-    behavior: "smooth"
-  });
+  addEventOnElem(sliderNextBtn, "click", slideNext);
+  addEventOnElem(sliderPrevBtn, "click", slidePrev);
+
 }
 
-if (heroSliderNextBtn) addEventOnElem(heroSliderNextBtn, "click", slideNext);
-if (heroSliderPrevBtn) addEventOnElem(heroSliderPrevBtn, "click", slidePrev);
+const sliders = document.querySelectorAll("[data-slider-parent]");
+
+for (let i = 0, len = sliders.length; i < len; i++) { initSlider(sliders[i]); }
