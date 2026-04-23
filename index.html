@@ -168,9 +168,18 @@
       -->
 
       <section class="section hero" id="home" aria-label="hero" data-section>
-        <div class="container">
+        <div class="container" style="position: relative;">
 
-          <ul class="has-scrollbar">
+          <button class="slider-btn prev" aria-label="slide to previous" data-hero-slider-prev>
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button class="slider-btn next" aria-label="slide to next" data-hero-slider-next>
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+
+          <ul class="has-scrollbar" data-hero-slider>
+
 
             <li class="scrollbar-item">
               <div class="hero-card has-bg-image" style="background-image: url('./assets/images/revslider_h1-2.png')">
@@ -826,7 +835,7 @@
 
                 <a href="#" class="btn btn-secondary">Explore More</a>
 
-                <div class="has-bg-image" style="background-image: url('./assets/images/banner-1.jpg')"></div>
+                <div class="has-bg-image" style="background-image: url('./assets/images/ChatGPT.png')"></div>
 
               </div>
             </li>
@@ -932,7 +941,7 @@
         <div class="container">
 
           <figure class="offer-banner">
-            <img src="./assets/images/offer-banner-1.jpg" width="305" height="408" loading="lazy" alt="offer products"
+            <img src="./assets/images/CocaCola.jpeg" width="305" height="408" loading="lazy" alt="offer products"
               class="w-100">
 
             <img src="./assets/images/offer-banner-2.jpg" width="450" height="625" loading="lazy" alt="offer products"

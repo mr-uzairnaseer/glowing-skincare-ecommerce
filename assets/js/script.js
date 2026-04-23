@@ -98,3 +98,46 @@ const scrollReveal = function () {
 scrollReveal();
 
 addEventOnElem(window, "scroll", scrollReveal);
+
+
+
+/**
+ * hero slider
+ */
+
+const heroSlider = document.querySelector("[data-hero-slider]");
+const heroSliderNextBtn = document.querySelector("[data-hero-slider-next]");
+const heroSliderPrevBtn = document.querySelector("[data-hero-slider-prev]");
+
+let currentSlidePos = 0;
+
+const slideNext = function () {
+  const slideItems = heroSlider.querySelectorAll(".scrollbar-item");
+  if (currentSlidePos >= slideItems.length - 1) {
+    currentSlidePos = 0;
+  } else {
+    currentSlidePos++;
+  }
+
+  heroSlider.scrollTo({
+    left: heroSlider.offsetWidth * currentSlidePos,
+    behavior: "smooth"
+  });
+}
+
+const slidePrev = function () {
+  const slideItems = heroSlider.querySelectorAll(".scrollbar-item");
+  if (currentSlidePos <= 0) {
+    currentSlidePos = slideItems.length - 1;
+  } else {
+    currentSlidePos--;
+  }
+
+  heroSlider.scrollTo({
+    left: heroSlider.offsetWidth * currentSlidePos,
+    behavior: "smooth"
+  });
+}
+
+if (heroSliderNextBtn) addEventOnElem(heroSliderNextBtn, "click", slideNext);
+if (heroSliderPrevBtn) addEventOnElem(heroSliderPrevBtn, "click", slidePrev);
