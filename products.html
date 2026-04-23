@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Glowing</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    .breadcrumb {
+      background-color: var(--cultured-2);
+      padding-block: 60px;
+      text-align: center;
+    }
+
+    .breadcrumb-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: var(--fs-8);
+      text-transform: uppercase;
+      font-weight: var(--fw-600);
+      letter-spacing: 1px;
+    }
+
+    .breadcrumb-item:not(:last-child)::after {
+      content: "/";
+      margin-inline-start: 10px;
+      color: var(--gray-web);
+    }
+
+    .breadcrumb-item.active { color: var(--hoockers-green); }
+
+    .product-grid {
+      display: grid;
+      gap: 30px;
+    }
+
+    @media (min-width: 575px) {
+      .product-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (min-width: 992px) {
+      .product-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    @media (min-width: 1200px) {
+      .product-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    .shop-card .card-banner {
+      background-color: var(--cultured-1);
+    }
+
+    .section.info {
+      background-color: var(--cultured-1);
+      margin-block: 50px;
+    }
+
+    .info-wrapper {
+      display: grid;
+      gap: 40px;
+      align-items: center;
+      padding-block: 40px;
+    }
+
+    @media (min-width: 992px) {
+      .info-wrapper { 
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+      }
+    }
+
+    .info-banner {
+      border-radius: var(--radius-3);
+      overflow: hidden;
+    }
+
+    .info-content .section-title {
+      text-align: left;
+      margin-block-end: 20px;
+    }
+
+    .info-content .section-text {
+      margin-block-end: 35px;
+      font-size: var(--fs-6);
+      line-height: 1.8;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 20px;
+    }
+
+    @media (min-width: 575px) {
+      .info-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 15px 25px;
+      background-color: var(--white);
+      border-radius: var(--radius-3);
+      box-shadow: var(--shadow-2);
+      transition: var(--transition-1);
+    }
+
+    .info-item:hover {
+      transform: translateX(10px);
+      color: var(--hoockers-green);
+    }
+
+    .info-item .span {
+      font-size: var(--fs-7);
+      font-weight: var(--fw-700);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .info-item ion-icon {
+      font-size: 24px;
+      color: var(--hoockers-green);
+    }
+  </style>
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="alert">
+      <div class="container">
+        <p class="alert-text">Find the best prices in United Kingdom</p>
+      </div>
+    </div>
+
+    <div class="header-top" data-header>
+      <div class="container">
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/LogoOnly.png" width="120" height="120" alt="Glowing">
+        </a>
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html#home" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="index.html#collection" class="navbar-link has-after">Collection</a>
+            </li>
+
+            <li>
+              <a href="products.html" class="navbar-link has-after">Shop</a>
+            </li>
+
+            <li>
+              <a href="index.html#offer" class="navbar-link has-after">Offer</a>
+            </li>
+
+            <li>
+              <a href="index.html#blog" class="navbar-link has-after">Blog</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+
+          <div class="input-wrapper">
+            <input type="search" name="search" placeholder="Search product" class="search-field">
+
+            <button class="search-submit" aria-label="search">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary">Contact Us</a>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #MOBILE NAVBAR
+  -->
+
+  <div class="sidebar">
+    <div class="mobile-navbar" data-navbar>
+
+      <div class="wrapper">
+        <a href="index.html" class="logo">
+          <img src="./assets/images/LogoOnly.png" width="50" height="50" alt="Glowing">
+        </a>
+
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+
+        <li>
+          <a href="index.html#home" class="navbar-link" data-nav-link>Home</a>
+        </li>
+
+        <li>
+          <a href="index.html#collection" class="navbar-link" data-nav-link>Collection</a>
+        </li>
+
+        <li>
+          <a href="products.html" class="navbar-link" data-nav-link>Shop</a>
+        </li>
+
+        <li>
+          <a href="index.html#offer" class="navbar-link" data-nav-link>Offer</a>
+        </li>
+
+        <li>
+          <a href="index.html#blog" class="navbar-link" data-nav-link>Blog</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="overlay" data-nav-toggler data-overlay></div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #BREADCRUMB
+      -->
+
+      <section class="breadcrumb">
+        <div class="container">
+
+          <h1 class="h1">Our Products</h1>
+
+          <ul class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="breadcrumb-link">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Shop</li>
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PRODUCTS
+      -->
+
+      <section class="section shop" aria-label="shop" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">All Products</h2>
+
+            <p class="section-text">
+              Showing 1-12 of 12 results
+            </p>
+          </div>
+
+          <ul class="product-grid">
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-01.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-02.jpg" width="540" height="720" loading="lazy" alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Bio-shroom Rejuvenating Serum</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-03.jpg" width="540" height="720" loading="lazy" alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Coffee Bean Caffeine Eye Cream</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-04.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-05.jpg" width="540" height="720" loading="lazy" alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Coffee Bean Caffeine Eye Cream</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-06.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-07.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-08.jpg" width="540" height="720" loading="lazy" alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Bio-shroom Rejuvenating Serum</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-09.jpg" width="540" height="720" loading="lazy" alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Coffee Bean Caffeine Eye Cream</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-10.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-11.jpg" width="540" height="720" loading="lazy" alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Coffee Bean Caffeine Eye Cream</a></h3>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product-12.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="add to cart">
+                      <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="compare">
+                      <ion-icon name="repeat-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INFO SECTIONS
+      -->
+
+      <section class="section info" aria-label="info" data-section>
+        <div class="container">
+          
+          <div class="info-wrapper">
+            <figure class="info-banner img-holder" style="--width: 600; --height: 500;">
+              <img src="./assets/images/banner-1.jpg" width="600" height="500" loading="lazy" alt="Ingredients" class="img-cover">
+            </figure>
+
+            <div class="info-content">
+              <h2 class="h2 section-title">Premium Natural Ingredients</h2>
+              
+              <p class="section-text">
+                Our products are formulated with the finest natural ingredients sourced responsibly from around the globe. We believe in the power of nature to reveal your skin's true beauty.
+              </p>
+
+              <ul class="info-list">
+
+                <li class="info-item">
+                  <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">100% Organic Extracts</span>
+                </li>
+
+                <li class="info-item">
+                  <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">No Synthetic Fragrances</span>
+                </li>
+
+                <li class="info-item">
+                  <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">Dermatologist Tested</span>
+                </li>
+
+              </ul>
+
+              <a href="#" class="btn-link" style="margin-block-start: 30px;">
+                <span class="span">Discover Our Ingredients</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-label="feature" data-section>
+        <div class="container">
+
+          <h2 class="h2-large section-title">The Glowing Standard</h2>
+
+          <ul class="flex-list">
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
+                  class="card-icon">
+
+                <h3 class="h3 card-title">Guaranteed PURE</h3>
+
+                <p class="card-text">
+                  All formulations adhere to strict purity standards and never contain harsh toxins.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
+                  alt="Cruelty-Free" class="card-icon">
+
+                <h3 class="h3 card-title">Completely Cruelty-Free</h3>
+
+                <p class="card-text">
+                  We are committed to ethical practices and never test our products on animals.
+                </p>
+
+              </div>
+            </li>
+
+            <li class="flex-item">
+              <div class="feature-card">
+
+                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
+                  alt="Sourcing" class="card-icon">
+
+                <h3 class="h3 card-title">Ingredient Sourcing</h3>
+
+                <p class="card-text">
+                  We source only the highest quality ingredients from sustainable farmers.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" data-section>
+    <div class="container">
+
+      <div class="footer-top">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">
+              Find a location nearest you. See <a href="#" class="link">Our Stores</a>
+            </p>
+          </li>
+
+          <li>
+            <p class="footer-list-text bold">+391 (0)35 2568 4593</p>
+          </li>
+
+          <li>
+            <p class="footer-list-text">hello@domain.com</p>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful links</p>
+          </li>
+
+          <li>
+            <a href="products.html" class="footer-link">New Products</a>
+          </li>
+
+          <li>
+            <a href="products.html" class="footer-link">Best Sellers</a>
+          </li>
+
+          <li>
+            <a href="products.html" class="footer-link">Bundle & Save</a>
+          </li>
+
+          <li>
+            <a href="products.html" class="footer-link">Online Gift Card</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Infomation</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Start a Return</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="newsletter-title">Good emails.</p>
+
+          <p class="newsletter-text">
+            Enter your email below to be the first to know about new collections and product launches.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Enter your email address" required
+              class="email-field">
+
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <div class="wrapper">
+          <p class="copyright">
+            &copy; 2022 codewithsadee
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/LogoOnly.png" width="50" height="50" loading="lazy" alt="Glowing">
+        </a>
+
+        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
