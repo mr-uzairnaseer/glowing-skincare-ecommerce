@@ -1814,7 +1814,7 @@ body {
 
   .navbar .navbar-link {
     color: var(--black);
-    font-size: var(--fs-6);
+    font-size: var(--fs-5);
     font-weight: var(--fw-700);
     text-transform: uppercase;
     letter-spacing: 1px;

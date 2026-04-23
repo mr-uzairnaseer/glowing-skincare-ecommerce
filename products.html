@@ -48,7 +48,9 @@
       color: var(--gray-web);
     }
 
-    .breadcrumb-item.active { color: var(--hoockers-green); }
+    .breadcrumb-item.active {
+      color: var(--hoockers-green);
+    }
 
     .product-grid {
       display: grid;
@@ -56,15 +58,21 @@
     }
 
     @media (min-width: 575px) {
-      .product-grid { grid-template-columns: 1fr 1fr; }
+      .product-grid {
+        grid-template-columns: 1fr 1fr;
+      }
     }
 
     @media (min-width: 992px) {
-      .product-grid { grid-template-columns: repeat(3, 1fr); }
+      .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
 
     @media (min-width: 1200px) {
-      .product-grid { grid-template-columns: repeat(4, 1fr); }
+      .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
 
     .shop-card .card-banner {
@@ -84,7 +92,7 @@
     }
 
     @media (min-width: 992px) {
-      .info-wrapper { 
+      .info-wrapper {
         grid-template-columns: 1fr 1fr;
         gap: 80px;
       }
@@ -178,26 +186,13 @@
         <nav class="navbar">
           <ul class="navbar-list">
 
-            <li>
-              <a href="index.html#home" class="navbar-link has-after">Home</a>
-            </li>
+            
 
             <li>
-              <a href="index.html#collection" class="navbar-link has-after">Collection</a>
+              <a href="products.html" class="navbar-link has-after">HOME</a>
             </li>
 
-            <li>
-              <a href="products.html" class="navbar-link has-after">Shop</a>
-            </li>
-
-            <li>
-              <a href="index.html#offer" class="navbar-link has-after">Offer</a>
-            </li>
-
-            <li>
-              <a href="index.html#blog" class="navbar-link has-after">Blog</a>
-            </li>
-
+          
           </ul>
         </nav>
 
@@ -288,9 +283,8 @@
 
           <ul class="breadcrumb-list">
             <li class="breadcrumb-item">
-              <a href="index.html" class="breadcrumb-link">Home</a>
+              <a href="index.html" class="breadcrumb-link">Home / Shop</a>
             </li>
-            <li class="breadcrumb-item active">Shop</li>
           </ul>
 
         </div>
@@ -311,7 +305,7 @@
             <h2 class="h2 section-title">All Products</h2>
 
             <p class="section-text">
-              Showing 1-12 of 12 results
+              Showing 1-20 of 20 results
             </p>
           </div>
 
@@ -320,7 +314,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_30_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <img src="./assets/images/product_30_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -331,7 +326,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                  <h3><a href="#" class="card-title">Coca Cola 1.5L </a></h3>
                 </div>
               </div>
             </li>
@@ -339,7 +334,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_29_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+                  <img src="./assets/images/product_29_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -350,7 +346,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Bio-shroom Rejuvenating Serum</a></h3>
+                  <h3><a href="#" class="card-title">Barr American Cream Soda</a></h3>
                 </div>
               </div>
             </li>
@@ -358,7 +354,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_28_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <img src="./assets/images/product_28_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -369,7 +366,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Coffee Bean Caffeine Eye Cream</a></h3>
+                  <h3><a href="#" class="card-title">Evoca Cola</a></h3>
                 </div>
               </div>
             </li>
@@ -377,7 +374,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_27_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <img src="./assets/images/product_27_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -388,7 +386,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                  <h3><a href="#" class="card-title">Pepsi Max No Sugar</a></h3>
                 </div>
               </div>
             </li>
@@ -396,7 +394,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_26_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <img src="./assets/images/product_26_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -407,7 +406,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Coffee Bean Caffeine Eye Cream</a></h3>
+                  <h3><a href="#" class="card-title">Rubicon Spring Black</a></h3>
                 </div>
               </div>
             </li>
@@ -415,7 +414,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_25_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <img src="./assets/images/product_25_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -426,7 +426,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                  <h3><a href="#" class="card-title">Coca Cola Orignal</a></h3>
                 </div>
               </div>
             </li>
@@ -434,7 +434,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_24_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <img src="./assets/images/product_24_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -445,7 +446,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                  <h3><a href="#" class="card-title">Red Bull Energy Drink</a></h3>
                 </div>
               </div>
             </li>
@@ -453,7 +454,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_23_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Bio-shroom Rejuvenating Serum" class="img-cover">
+                  <img src="./assets/images/product_23_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Bio-shroom Rejuvenating Serum" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -464,7 +466,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Bio-shroom Rejuvenating Serum</a></h3>
+                  <h3><a href="#" class="card-title">IRN-BRU</a></h3>
                 </div>
               </div>
             </li>
@@ -472,7 +474,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_22_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <img src="./assets/images/product_22_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -483,7 +486,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Coffee Bean Caffeine Eye Cream</a></h3>
+                  <h3><a href="#" class="card-title">Evoca Strawberry</a></h3>
                 </div>
               </div>
             </li>
@@ -491,7 +494,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_20_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <img src="./assets/images/product_20_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -502,7 +506,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                  <h3><a href="#" class="card-title">Monster Orignal Green</a></h3>
                 </div>
               </div>
             </li>
@@ -510,7 +514,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_19_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
+                  <img src="./assets/images/product_19_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Coffee Bean Caffeine Eye Cream" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -521,7 +526,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Coffee Bean Caffeine Eye Cream</a></h3>
+                  <h3><a href="#" class="card-title">Coca Cola Zero Sugar</a></h3>
                 </div>
               </div>
             </li>
@@ -529,7 +534,8 @@
             <li>
               <div class="shop-card">
                 <div class="card-banner img-holder" style="--width: 540; --height: 720;">
-                  <img src="./assets/images/product_18_1-768x768.jpg" width="540" height="720" loading="lazy" alt="Facial cleanser" class="img-cover">
+                  <img src="./assets/images/product_18_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
                   <div class="card-actions">
                     <button class="action-btn" aria-label="view product">
                       <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
@@ -540,7 +546,152 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h3><a href="#" class="card-title">Facial cleanser</a></h3>
+                  <h3><a href="#" class="card-title">Robinsons Apple & Blackcurrant</a></h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product_11_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">DASH Sparkling Water</a></h3>
+                </div>
+              </div>
+            </li><li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product_12_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Mountain Dew</a></h3>
+                </div>
+              </div>
+            </li><li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product_13_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">7UP Original</a></h3>
+                </div>
+              </div>
+            </li><li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product_14_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Sprite Lemon Lime</a></h3>
+                </div>
+              </div>
+            </li><li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product_15_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Fanta Orange</a></h3>
+                </div>
+              </div>
+            </li><li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product_16_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Lacozade Energy</a></h3>
+                </div>
+              </div>
+            </li><li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product_17_1-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">gatorade Thirst Quencher</a></h3>
+                </div>
+              </div>
+            </li><li>
+              <div class="shop-card">
+                <div class="card-banner img-holder" style="--width: 540; --height: 720;">
+                  <img src="./assets/images/product_20_2-768x768.jpg" width="540" height="720" loading="lazy"
+                    alt="Facial cleanser" class="img-cover">
+                  <div class="card-actions">
+                    <button class="action-btn" aria-label="view product">
+                      <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                    <button class="action-btn" aria-label="add to wishlist">
+                      <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <h3><a href="#" class="card-title">Monster Reserve Orange</a></h3>
                 </div>
               </div>
             </li>
@@ -558,19 +709,21 @@
         - #INFO SECTIONS
       -->
 
-      <section class="section info" aria-label="info" data-section>
+      <!-- <section class="section info" aria-label="info" data-section>
         <div class="container">
-          
+
           <div class="info-wrapper">
             <figure class="info-banner img-holder" style="--width: 600; --height: 500;">
-              <img src="./assets/images/banner-1.jpg" width="600" height="500" loading="lazy" alt="Ingredients" class="img-cover">
+              <img src="./assets/images/banner-1.jpg" width="600" height="500" loading="lazy" alt="Ingredients"
+                class="img-cover">
             </figure>
 
             <div class="info-content">
               <h2 class="h2 section-title">Premium Natural Ingredients</h2>
-              
+
               <p class="section-text">
-                Our products are formulated with the finest natural ingredients sourced responsibly from around the globe. We believe in the power of nature to reveal your skin's true beauty.
+                Our products are formulated with the finest natural ingredients sourced responsibly from around the
+                globe. We believe in the power of nature to reveal your skin's true beauty.
               </p>
 
               <ul class="info-list">
@@ -600,7 +753,7 @@
           </div>
 
         </div>
-      </section>
+      </section> -->
 
 
 
@@ -610,59 +763,53 @@
         - #FEATURE
       -->
 
-      <section class="section feature" aria-label="feature" data-section>
+       <section class="section offer" id="offer" aria-label="offer" data-section>
         <div class="container">
 
-          <h2 class="h2-large section-title">The Glowing Standard</h2>
+          <div class="offer-content">
 
-          <ul class="flex-list">
+            <p class="offer-subtitle">
+              <span class="span">Special Offer</span>
 
-            <li class="flex-item">
-              <div class="feature-card">
 
-                <img src="./assets/images/feature-1.jpg" width="204" height="236" loading="lazy" alt="Guaranteed PURE"
-                  class="card-icon">
+            </p>
 
-                <h3 class="h3 card-title">Guaranteed PURE</h3>
+            <h2 class="h2-large section-title">Variety, Quality, & Best Prices</h2>
 
-                <p class="card-text">
-                  All formulations adhere to strict purity standards and never contain harsh toxins.
-                </p>
+            <p class="section-text">
+              Explore our range of premium drinks available in 1.5L bottles. Quality guaranteed with every sip. Get
+              yours now and experience the refreshment. </p>
 
+            <div class="countdown">
+              <div class="time-wrapper">
+                <span class="time" aria-label="days">15</span>
+                <span class="label">Days</span>
               </div>
-            </li>
-
-            <li class="flex-item">
-              <div class="feature-card">
-
-                <img src="./assets/images/feature-2.jpg" width="204" height="236" loading="lazy"
-                  alt="Cruelty-Free" class="card-icon">
-
-                <h3 class="h3 card-title">Completely Cruelty-Free</h3>
-
-                <p class="card-text">
-                  We are committed to ethical practices and never test our products on animals.
-                </p>
-
+              <div class="time-wrapper">
+                <span class="time" aria-label="hours">21</span>
+                <span class="label">Hours</span>
               </div>
-            </li>
-
-            <li class="flex-item">
-              <div class="feature-card">
-
-                <img src="./assets/images/feature-3.jpg" width="204" height="236" loading="lazy"
-                  alt="Sourcing" class="card-icon">
-
-                <h3 class="h3 card-title">Ingredient Sourcing</h3>
-
-                <p class="card-text">
-                  We source only the highest quality ingredients from sustainable farmers.
-                </p>
-
+              <div class="time-wrapper">
+                <span class="time" aria-label="minutes">46</span>
+                <span class="label">Mins</span>
               </div>
-            </li>
+              <div class="time-wrapper">
+                <span class="time" aria-label="seconds">08</span>
+                <span class="label">Secs</span>
+              </div>
+            </div>
 
-          </ul>
+            <a href="#" class="btn btn-primary">Get Now</a>
+
+          </div>
+
+          <figure class="offer-banner">
+            <img src="./assets/images/CocaCola.jpeg" width="305" height="408" loading="lazy" alt="offer products"
+              class="w-100 img-zigzag">
+
+            <img src="./assets/images/all.jpeg" width="450" height="625" loading="lazy" alt="offer products"
+              class="w-100 img-organic">
+          </figure>
 
         </div>
       </section>
@@ -683,6 +830,13 @@
 
       <div class="footer-top">
 
+        <div class="footer-list">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.png" width="260" height="260" alt="Glowing">
+          </a>
+
+        </div>
+
         <ul class="footer-list">
 
           <li>
@@ -691,16 +845,17 @@
 
           <li>
             <p class="footer-list-text">
-              Find a location nearest you. See <a href="#" class="link">Our Stores</a>
+              Sector 5 Distribution LTD<br>
+              124 City Road<br>
+              London, EC1V 2NX<br>
+              Company No: 17165282
             </p>
           </li>
 
-          <li>
-            <p class="footer-list-text bold">+391 (0)35 2568 4593</p>
-          </li>
+
 
           <li>
-            <p class="footer-list-text">hello@domain.com</p>
+            <p class="footer-list-text"><strong>sector5ltd@gmail.com</strong></p>
           </li>
 
         </ul>
@@ -716,46 +871,20 @@
           </li>
 
           <li>
-            <a href="products.html" class="footer-link">Best Sellers</a>
+            <a href="index.html#shop" class="footer-link">Best Sellers</a>
           </li>
 
           <li>
-            <a href="products.html" class="footer-link">Bundle & Save</a>
-          </li>
-
-          <li>
-            <a href="products.html" class="footer-link">Online Gift Card</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Infomation</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Start a Return</a>
+            <a href="index.html#offer" class="footer-link">Special Offer</a>
           </li>
 
           <li>
             <a href="contact.html" class="footer-link">Contact Us</a>
           </li>
 
-          <li>
-            <a href="#" class="footer-link">Shipping FAQ</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy Policy</a>
-          </li>
-
         </ul>
+
+
 
         <div class="footer-list">
 
@@ -778,45 +907,37 @@
 
       <div class="footer-bottom">
 
-        <div class="wrapper">
-          <p class="copyright">
-            &copy; 2022 codewithsadee
-          </p>
+        <p class="copyright">
+          &copy; 2026 SECTOR5 DISTRIBUTION LTD. All Rights Reserved.
+        </p>
 
-          <ul class="social-list">
+        <ul class="social-list">
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
+          <li>
+            <a href="https://x.com/sector5ltd" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61560617694879" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
+          <li>
+            <a href="https://www.instagram.com/sector5_ltd/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
+          <li>
+            <a href="https://www.linkedin.com/company/sector5distributionltd/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
 
-          </ul>
-        </div>
-
-        <a href="index.html" class="logo">
-          <img src="./assets/images/LogoOnly.png" width="50" height="50" loading="lazy" alt="Glowing">
-        </a>
-
-        <img src="./assets/images/pay.png" width="313" height="28" alt="available all payment method" class="w-100">
+        </ul>
 
       </div>
 
